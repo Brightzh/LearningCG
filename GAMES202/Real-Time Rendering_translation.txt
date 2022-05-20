@@ -542,7 +542,7 @@ P = [[2n' / (r - l), 0, -(r + l) / (r - l), 0], [0, 2n' / (t - b), -(t + b) / (t
 zNDC = d - e / pz，其中 d = -(f' + n') / (f' - n')，e = -2f' * n' / (f' - n')，vx = -pz
 NDC表示normalized device coordinates，标准化设备坐标，zNDC ∈ [−1,+1]
 为了提高精度，我们可以存储1.0 - zNDC，用浮点数。
-提高shadow maps的进度，可以用深度值的对数。
+提高shadow maps的精度，可以用深度值的对数。
 z = w(log2(max(1e-6, 1 + w)) * fc - 1)，用于OpenGL
 z = wlog2(max(1e-6, 1 + w)) * fc / 2，用于DirectX
 fc = 2 / log2(f + 1)
